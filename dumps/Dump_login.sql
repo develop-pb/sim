@@ -1,4 +1,4 @@
--- MySQL dump 10.13  Distrib 5.7.16, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.17, for Linux (x86_64)
 --
 -- Host: 127.0.0.1    Database: login
 -- ------------------------------------------------------
@@ -28,9 +28,8 @@ CREATE TABLE `user` (
   `password` varchar(150) COLLATE utf8_bin NOT NULL,
   `nome` varchar(150) COLLATE utf8_bin NOT NULL,
   `sobrenome` varchar(150) COLLATE utf8_bin NOT NULL,
-  `foto` mediumtext COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +38,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'pbentes@protonmail.com','1234','Paulo','Bentes','01.jpg'),(3,'camiladeo@gmail.com','4321','Camila','Oliveira','02.jpg'),(4,'tiagompcandeias@gmail.com','prof123','Professor Tiago','Candeias','03.jpg');
+INSERT INTO `user` VALUES (1,'pbentes@protonmail.com','1234','Paulo','Bentes'),(3,'camiladeo@gmail.com','4321','Camila','Oliveira'),(4,'tiagompcandeias@gmail.com','prof123','Professor Tiago','Candeias'),(5,'paulosbentes@gmail.com','paulo123','Paulo','Bentes');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-01-15 18:28:07
+-- Dump completed on 2017-01-22 13:09:24
